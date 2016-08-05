@@ -225,7 +225,8 @@ $('#submit').click(function() {
     }
   }
  }).done(function(response) {
-   alert('hai'); // if you're into that sorta thing
+  document.getElementById("contact-form").reset();
+  alert('Message has been Sent!!!!!'); // if you're into that sorta thing
   });
 });
 
