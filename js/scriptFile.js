@@ -117,6 +117,7 @@ function openTab(evt, cityName) {
           map.fitBounds(bounds);
         });
         document.getElementById("divmap").style.display = "block";
+        document.getElementById("pac-input").style.display = "block";
       }
 $(document).ready(function(){
 
