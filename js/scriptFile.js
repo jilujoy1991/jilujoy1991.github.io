@@ -225,7 +225,7 @@ $('#submit').click(function() {
     }
   }
  }).done(function(response) {
-   alert(response); // if you're into that sorta thing
+   alert('hai'); // if you're into that sorta thing
   });
 });
 
