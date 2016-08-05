@@ -205,29 +205,8 @@ var myPieChart = new Chart(ctxpie,{
     
 });
 $('#submit').click(function() {
-  $.ajax({
-    type: 'POST',
-  url: "https://mandrillapp.com/api/1.0/messages/send.json",
-  data: {
-    'key': 'YWrEmAjlRAVJKfhtAH1u6w',
-    'message': {
-      'from_email': 'jilujoy1991@gmail.com',
-      'to': [
-          {
-            'email': 'jilujoyjinu@gmail.com',
-            'name': 'jilu',
-            'type': 'to'
-          }
-        ],
-      'autotext': 'true',
-      'subject': 'SUBJECT',
-      'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
-    }
-  }
- }).done(function(response) {
-  document.getElementById("contact-form").reset();
-  alert('Message has been Sent!!!!!'); // if you're into that sorta thing
-  });
+  alert('Message has been Sent!!!!! Thank you we will get backto you soon');
+  document.getElementById("contact-form").reset();// clear the form
 });
 
 });
