@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment_A</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="chart.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBYI270DL2jW7fSMyXCYFCq3ZZn8OIlNw&libraries=places&callback=initAutocomplete"
+         async defer></script>
+<script src="myscripts.js"></script>
+<script src="moment.js"></script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<div id="maindiv" class="container">
+<image src="images/vrukorg.png" class="ribbon" >
+<br/>
+<br/><br/>
+<br/><br/>
+<br/>
+   <div id="headerdiv" >
+	
+		<ul class="tab">
+  			<li><a href="#" onclick="openTab(event, 'Home')" class="tablinks active">Home</a></li>
+  			<li><a href="#" onclick="openTab(event, 'Charts')" class="tablinks">Charts</a></li>
+  			<li><a href="#" onclick="openTab(event, 'Contactus')" class="tablinks">Contact Us</a></li>
+		</ul>
+   
+   </div>
+   <hr>
+   <div id="Home" class="tabcontent" style="display:block;">
+ 
+  	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+	<div id="map" style="width:500px;height:380px;"></div>
+	
+   </div>
+
+   <div id="Charts" class="tabcontent" >
+   	<div style="width:500px;height:200px;margin:50px auto;padding:0px;">
+  	<canvas id="barchart" ></canvas>
+	</div>
+	<div style="width:300px;height:200px;margin:50px auto;padding:0px;">
+	<canvas id="piechart" ></canvas>
+	</div>
+   
+   </div>
+
+   <div id="Contactus" class="tabcontent">
+
+	<div id="contactDetails" >		
+
+	   <form id="contact-form">
+   
+		<table><tr>
+		<td><label for="name">Name:</label><td/>
+		<td><input type="text" name="name" id="name" tabindex="1" />
+		<tr/><tr>
+		<td><label for="email">Email:</label><td/>
+		<td><input type="text" name="email" id="email" tabindex="2" />
+		<tr/><tr>
+		<td><label for="subject">Subject:</label><td/>
+		<td><input type="text" name="subject" id="subject" tabindex="3" />
+		<tr/><tr>
+		<td><label for="comments">Comments:</label><td/>
+		<td><textarea name="comments" id="comments" cols="45" rows="5" tabindex="4"></textarea>
+		<tr/><tr>
+		<td><label for="submit"></label><td/>
+		<td><input type="submit" class="button" name="submit" id="submit" value="Submit" tabindex="5" /><td/><tr/>
+		</table>
+	
+
+  	   </form>
+  	</div>
+   </div>
+</div>
+</br>
+<div id="footer">
+      <div class="container">
+        <p>Simple layout design for <a href="http://blog.teamtreehouse.com/">Treehouse Blog</a>.</p>
+        <p>Feel free to download and use these codes for any basic template layout.</p>
+        <p><small>Website code structured with <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>. Background image credits to <a href="http://www.flickr.com/photos/fjolnir/2342246699/">Fjölnir Ásgeirsson</a>. Sample content via <a href="http://bluthipsum.com/">Bluth Ipsum</a>.</small></p>
+      </div>
+    </div>
+    
+</body>
+
+</html>
+
