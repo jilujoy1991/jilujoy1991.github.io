@@ -116,6 +116,7 @@ function openTab(evt, cityName) {
           });
           map.fitBounds(bounds);
         });
+        document.getElementById("divmap").style.display = "block";
       }
 $(document).ready(function(){
 
