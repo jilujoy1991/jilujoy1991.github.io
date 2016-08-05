@@ -205,7 +205,7 @@ var myPieChart = new Chart(ctxpie,{
     
 });
 $('#submit').click(function() {
-  alert('Message has been Sent!!!!! Thank you we will get backto you soon');
+  alert('Message has been Sent!!!!! Thank you, we will get back to you soon');
   document.getElementById("contact-form").reset();// clear the form
 });
 
