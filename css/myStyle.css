@@ -36,6 +36,15 @@ input.ng-invalid.ng-dirty{
 input.ng-valid.ng-dirty{
     border-color: #2ecc71;
 }
+textarea[required].ng-pristine{
+    border-color: #e74c3c;
+}
+textarea.ng-invalid.ng-dirty{
+    border-color: #e74c3c;
+}
+textarea.ng-valid.ng-dirty{
+    border-color: #2ecc71;
+}
 #submit{
      background-color: blue;
 }
