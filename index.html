@@ -39,9 +39,9 @@
         				ng-maxlength="20"
         				required/>
 				<div class="help-block" ng-messages="contactform.email.$error" style="color:red" role="alert" ng-if="contactform.email.$touched">
-    					<div ng-message="required">Please enter your Email Address</div>
-    					<div ng-message="minlength">Your field is too short</div>
-    					<div ng-message="maxlength">Your field is too long</div>
+    					<ng-message when="required">Please enter your Email Address</ng-message>
+    					<ng-message when="minlength">Your field is too short</ng-message>
+    					<ng-message when="maxlength">Your field is too long</ng-message>
   				</div>
 				</div>
 		  	</div>
@@ -55,9 +55,9 @@
         				required/>
 
 				<div class="help-block" ng-messages="contactform.subject.$error" style="color:red" role="alert" ng-if="contactform.subject.$touched">
-    				<div ng-message="required">Enter the subject</div>
-    				<div ng-message="minlength">Subject is too short</div>
-    				<div ng-message="maxlength">Subject is too long</div>
+    				<ng-message when="required">Enter the subject</ng-message>
+    				<ng-message when="minlength">Subject is too short</ng-message>
+    				<ng-message when="maxlength">Subject is too long</ng-message>
   				</div>
 				</div>
 		  	</div>
@@ -70,9 +70,9 @@
         				ng-maxlength="300"
         				required></textarea>
 				<div class="help-block" ng-messages="contactform.comments.$error" style="color:red" role="alert" ng-if="contactform.comments.$touched">
-    					<div ng-message="required">Please Type a Message to send</div>
-    					<div ng-message="minlength">Message is too short</div>
-    					<div ng-message="maxlength">Message is too long</div>
+    					<ng-message when="required">Please Type a Message to send</ng-message>
+    					<ng-message when="minlength">Message is too short</ng-message>
+    					<ng-message when="maxlength">Message is too long</ng-message>
   				</div>
 				</div>
 		  	</div>
