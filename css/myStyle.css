@@ -14,14 +14,7 @@ input {
     margin: 5px 0;
     
 }
-.button {
-    background: #17aa56;
-    color: #fff;
-    width: 100px;
-    height:30px;
-    border-radius: 7px;
-    padding: 5px ;
-}
+
 form[novalidate] input{
     border-left-width: 8px;
     border-color: #3498db;
