@@ -57,7 +57,8 @@
 
 				<div class="help-block" ng-messages="contactform.subject.$error" style="color:red" role="alert" ng-if="contactform.subject.$touched">
     				<ng-message when="required">Enter the subject</ng-message>
-    				<ng-message when="minlength,,maxlength">Subject is too short</ng-message>
+    				<ng-message when="minlength,maxlength">Subject is too short</ng-message>
+    				
     				
   				</div>
 				</div>
