@@ -45,6 +45,6 @@ textarea.ng-invalid.ng-dirty{
 textarea.ng-valid.ng-dirty{
     border-color: #2ecc71;
 }
-#submit{
+button{
      background-color: blue;
 }
