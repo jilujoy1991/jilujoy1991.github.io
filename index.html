@@ -25,8 +25,8 @@
         				ng-minlength="3" 
         				required/>
 				<div class="help-block" ng-messages="contactform.name.$error" style="color:red" role="alert" ng-if="contactform.name.$touched">
-    				<div ng-message="required">Please Enter your Name</div>
-    				<div ng-message="minlength">Name is too short</div>
+    				<ng-message when="required">Please Enter your Name</ng-message>
+    				<ng-message when="minlength">Name is too short</ng-message>
     				</div>
 				</div>
 		 	</div>
