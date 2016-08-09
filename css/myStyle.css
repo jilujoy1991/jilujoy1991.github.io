@@ -14,6 +14,14 @@ input {
     margin: 5px 0;
     
 }
+.contactusheading {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #f4f4f4;
+}
 
 form[novalidate] input{
     border-left-width: 8px;
