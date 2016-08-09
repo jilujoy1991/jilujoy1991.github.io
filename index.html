@@ -23,13 +23,11 @@
 				<input type="text" name="name" id="name" class="form-control" tabindex="1" 
         				ng-model="name" 
         				ng-minlength="3" 
-        				ng-maxlength="8"
         				required/>
 				<div class="help-block" ng-messages="contactform.name.$error" style="color:red" role="alert" ng-if="contactform.name.$touched">
     				<div ng-message="required">Please Enter your Name</div>
-    				<div ng-message="minlength">Your field is too short</div>
-    				<div ng-message="maxlength">Your field is too long</div>
-  				</div>
+    				<div ng-message="minlength">Name is too short</div>
+    				</div>
 				</div>
 		 	</div>
 		
@@ -58,8 +56,8 @@
 
 				<div class="help-block" ng-messages="contactform.subject.$error" style="color:red" role="alert" ng-if="contactform.subject.$touched">
     				<div ng-message="required">Enter the subject</div>
-    				<div ng-message="minlength">Your field is too short</div>
-    				<div ng-message="maxlength">Your field is too long</div>
+    				<div ng-message="minlength">Subject is too short</div>
+    				<div ng-message="maxlength">Subject is too long</div>
   				</div>
 				</div>
 		  	</div>
@@ -73,8 +71,8 @@
         				required></textarea>
 				<div class="help-block" ng-messages="contactform.comments.$error" style="color:red" role="alert" ng-if="contactform.comments.$touched">
     					<div ng-message="required">Please Type a Message to send</div>
-    					<div ng-message="minlength">Your field is too short</div>
-    					<div ng-message="maxlength">Your field is too long</div>
+    					<div ng-message="minlength">Message is too short</div>
+    					<div ng-message="maxlength">Message is too long</div>
   				</div>
 				</div>
 		  	</div>
