@@ -1,0 +1,500 @@
+/* ==========================================================================
+    clear
+ ========================================================================== */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+    outline: 0;
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    nowhitespace: afterproperty;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    ;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+figure,
+address {
+    padding: 0;
+    margin: 0;
+}
+
+a,
+bottom {
+    outline: 0;
+}
+
+
+/* ==========================================================================
+   html
+   ========================================================================== */
+
+.html img,
+.maxpic img {
+    max-width: 100%;
+}
+
+.maxpic {
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+
+/* ==========================================================================
+    jquery
+ ========================================================================== */
+
+.jqimgFill {
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.jqimgFill img,
+.jqimgFill-tc img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: none;
+    max-width: none;
+}
+
+.max-sm-size .jqimgFill.sm {
+    background: none!important;
+    height: auto!important;
+    width: 100%!important;
+}
+
+.max-sm-size .jqimgFill.sm img {
+    width: 100%!important;
+    height: auto!important;
+    display: block!important;
+}
+
+.max-xs-size .jqimgFill.xs {
+    background: none!important;
+    height: auto!important;
+    width: 100%!important;
+}
+
+.max-xs-size .jqimgFill.xs img {
+    width: 100%!important;
+    height: auto!important;
+    display: block!important;
+}
+
+
+/* ==========================================================================
+    public
+ ========================================================================== */
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.overflow-sm {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.max-md-size .overflow-sm {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.overflow {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.max-md-size .overflow {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.pd0 {
+    padding: 0;
+}
+
+.pd {
+    padding: 15px 25px;
+}
+
+.pdT {
+    padding-top: 50px !important;
+}
+
+.pdB {
+    padding-bottom: 50px !important;
+}
+
+.pdR {
+    padding-right: 10px;
+}
+
+.pdL {
+    padding-left: 10px;
+}
+
+.maT {
+    margin-top: 50px;
+}
+
+.maB {
+    margin-bottom: 50px;
+}
+
+.col {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.block {
+    display: block;
+}
+
+hr {
+    border-top-style: none;
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+    clear: both;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    padding-top: 20px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+
+/*實線*/
+
+hr.line {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-bottom-color: #CCC;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+/*虛線*/
+
+hr.dashed {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    border-bottom-color: #CCC;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.winH {
+    position: relative;
+}
+
+.max-xs-size .winH {}
+
+
+/* ==========================================================================
+   Rows
+   ========================================================================== */
+
+.rows,
+ul.rows,
+ol.rows,
+dl.rows {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.rows .listItem,
+ul.rows > li,
+ol.rows > li,
+dl.rows > dt,
+dl.rows > dd {
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: both
+}
+
+
+/* ==========================================================================
+   Columns [float]
+   ========================================================================== */
+
+.columns,
+ul.columns,
+ol.columns,
+dl.columns {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.columns:after,
+ul.columns:after,
+ol.columns:after,
+dl.columns:after {
+    content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.columns .list-item,
+ul.columns > li,
+ol.columns > li,
+dl.columns > dt,
+dl.columns > dd {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+
+/* ==========================================================================
+   Columns [inline]
+   ========================================================================== */
+
+.columns.inline,
+ul.columns.inline,
+ol.columns.inline,
+dl.columns.inline {
+    letter-spacing: -0.31em;
+}
+
+opera-hack:-o-prefocus,
+ul.columns.inline,
+ol.columns.inline,
+dl.columns.inline {
+    *word-spacing: -0.43em;
+}
+
+.columns.inline .listItem,
+ul.columns.inline > li,
+ol.columns.inline > li,
+dl.columns.inline > dt,
+dl.columns.inline > dd {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal
+}
+
+opera-hack:-o-prefocus,
+ul.columns.inline > li,
+ol.columns.inline > li,
+dl.columns.inline > dt dl.columns.inline > dd {
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+
+/* ==========================================================================
+    文字
+========================================================================== */
+
+body {
+    /*line-height: 1.7em;*/
+    font-size: 14px;
+}
+body p{
+    line-height: 1.7em;
+}
+
+.max-sm-size body {
+    font-size: 13px;
+}
+
+.max-xs-size body {
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #777;
+}
+
+
+/*時間*/
+
+time {
+    font-size: 10px;
+    color: #999;
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.more {
+    font-family: Verdana, sans-serif;
+}
+
+
+/*顏色*/
+
+.red {
+    color: #FF7E7E;
+}
+
+
+/*備註文字*/
+
+.notes {
+    color: #999;
+    font-size: 12px;
+}
+
+.num {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+
+
+/* ==========================================================================
+        圖片
+========================================================================== */
+
+
+/* ==========================================================================
+        編排
+========================================================================== */
+
+
+/*自動100%撐開*/
+
+.auto {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.auto .left {
+    float: left;
+}
+
+.auto .right {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+
+/* ==========================================================================
+    常用
+========================================================================== */
+
+.noSlider .slick-list {
+    text-align: center;
+}
+
+.noSlider .slick-list .slick-track {
+    left: inherit;
+    display: inline-block;
+    transform: none!important;
+}
