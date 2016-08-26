@@ -108,6 +108,8 @@ ul.rows {
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
+  -moz-animation-name: fade;
+  -moz-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
