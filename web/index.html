@@ -8,23 +8,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
   <script src="jquery.min.js"></script>
   <script src="bootstrap.min.js"></script>
   <link rel="shortcut icon" href="styles/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <div class="wp" style="background-color : black;">
-    <header class="" style="visibility: visible;" id="header" >
-      <div class="container md" >
-        <div class="navigation" >
-          
-          <div class="aside animated">
+    <header style="visibility: visible;" id="header" >
+      <nav class="navbar navbar-inverse">
+  <div class="aside animated">
             <div class="share">
               <ul class="columns">
-                <li class="item-search animated rotateIn"><a href="javascript:void(0)" title="Search" id="searhc-box-btn"><i class="icon-search"></i></a></li>
-               
                 
-                <li class="animated rotateIn"><a href="https://www.facebook.com/Edge-Core-Networks-137817126099/?ref=hl" target="_blank" title=""><i><img src="_upload/images/1605051452570.png" alt=""></i></a></li><li class="animated rotateIn"><a href="https://twitter.com/@EdgeCoreNetwork" target="_blank" title=""><i><img src="_upload/images/1605090956070.png" alt=""></i></a></li><li class="animated rotateIn"><a href="https://www.linkedin.com/company/edge-core-networks?trk=nav_account_sub_nav_company_admin" target="_blank" title=""><i><img src="_upload/images/1605091002070.png" alt=""></i></a></li><li class="animated rotateIn"><a href="https://www.youtube.com/channel/UCPSKmi8_jbw_Y_7JVjxC8Rw" target="_blank" title=""><i><img src="_upload/images/1605051453270.png" alt=""></i></a></li><li class="animated rotateIn"><a href="http://www.edge-core.com/contactInquiry.php" target="_blank" title=""><i><img src="_upload/images/1605051453570.png" alt=""></i></a></li>                
+                <li class="animated rotateIn"><a href="https://www.facebook.com/Edge-Core-Networks-137817126099/?ref=hl" target="_blank" title=""><i><img src="styles/images/facebook.png" alt=""></i></a></li><li class="animated rotateIn"><a href="https://twitter.com/@EdgeCoreNetwork" target="_blank" title=""><i><img src="styles/images/twitter.png" alt=""></i></a></li><li class="animated rotateIn"><a href="https://www.linkedin.com/company/edge-core-networks?trk=nav_account_sub_nav_company_admin" target="_blank" title=""><i><img src="styles/images/linkdin.png" alt=""></i></a></li><li class="animated rotateIn"><a href="https://www.youtube.com/channel/UCPSKmi8_jbw_Y_7JVjxC8Rw" target="_blank" title=""><i><img src="styles/images/youtube.png" alt=""></i></a></li><li class="animated rotateIn"><a href="http://www.edge-core.com/contactInquiry.php" target="_blank" title=""><i><img src="styles/images/mail.png" alt=""></i></a></li>                
               </ul>
             </div>
             <div class="links">
@@ -36,30 +34,38 @@
                     <li><a href="/">English</a></li>
                   </ul>
                 </li>
+                
               </ul>
             </div>
         </div>
-          <div class="menu">
-          
-            <ul class="nav nav-pills">
-              
-              <li class="home" onclick="openCity(event, 'Home')"><a tabindex="0"><i class="inco-home"></i>Home</a></li>
-              <li class="home" onclick="openCity(event, 'About')"><a tabindex="0"><i class="inco-home"></i>Products</a></li>
-              <li class="home" onclick="openCity(event, 'Projects')"><a tabindex="0"><i class="inco-home"></i>About</a></li>
-              <li class="home" onclick="openCity(event, 'Contact')"><a tabindex="0"><i class="inco-home"></i>Contact Us</a></li>
-             
-            </ul>
-
-          </div>
-          
-        </div>
-      
-      </div>
+  <div class="menu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active" onclick="openCity(event, 'Home')"><a href="#">Home</a></li>
+        <li onclick="openCity(event, 'About')"><a href="#">About</a></li>
+        <li onclick="openCity(event, 'Projects')"><a href="#">Projects</a></li>
+        <li onclick="openCity(event, 'Contact')"><a href="#">Contact Us</a></li>
+      </ul>
+            
+    </div>
+  </div>
+</nav>
+<div>
     </header>
 <div>
 <br>
 <br>
 <br><br>
+<div class="container text-center">  
 <div id="Home" class="tabcontent" style="display:block">
   <h3>London</h3>
   <p>London is the capital city of England.</p>
@@ -113,7 +119,8 @@
 </div>
 </div>
 </div>
-<footer id="footer">
+</div>
+<footer id="footer" class="container-fluid">
     <div class="container md">
       <div class="navigation">
         <h2 class="heading text-hide">Assistant Menu</h2>
@@ -197,11 +204,17 @@
         </div>
       </div>
     </div>
-    <div class="copyright">Copyright 2016 © Edgecore Networks Corporation<span>All Rights Reserved.</span></div>
+    <div class="copyright">Copyright 2016 © Adbello Corporation<span>All Rights Reserved.</span>
+    <p><a href="http://www.tismotech.com/terms-of-use/">Terms of usage</a> <br> <a href="http://www.tismotech.com/privacy-policy/">Privacy policy</a><br> All trademarks acknowledged <br></p>
+    </div>
+
     <button style="opacity: 1; display: none;" title="回頂端" class="top fixed"><span><i></i>TOP</span></button>
   </footer>
- <script src="scripts/default.js"></script> 
+ <script src="scripts/default.js"></script>
+ <script src="scripts/default_1.js"></script>
+
  <link rel="stylesheet" href="styles/style.css">
+ <link rel="stylesheet" href="styles/default.css">
 <script>
 function openCity(evt, tabName) {
     var i, tabcontent, tablinks;
