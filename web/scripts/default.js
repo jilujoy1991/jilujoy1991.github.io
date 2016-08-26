@@ -35,6 +35,7 @@
         function onDone() {
             /*onDone star*/
             /*document STAR*/
+            $header = $('#header');
             
             /*== top  =========================== */
             $(".top").click(function () {
