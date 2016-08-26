@@ -1,0 +1,10 @@
+ul.columns {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+columns .list-item, ul.columns > li, ol.columns > li, dl.columns > dt, dl.columns > dd {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
