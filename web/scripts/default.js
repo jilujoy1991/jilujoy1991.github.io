@@ -58,7 +58,6 @@
         }
         
     });
-    )
-            .init(options));
+    
     }
 })(jQuery);;
