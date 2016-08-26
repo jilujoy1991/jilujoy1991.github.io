@@ -35,45 +35,7 @@
         function onDone() {
             /*onDone star*/
             /*document STAR*/
-            h = $(window).height();
-            w = $(window).width();
-
-
-            $winH = $('.winH');
-            $winHw = $('.winHw');
-            $winHf = $('.winHf');
-            $jqimgFill = $('.jqimgFill');
-            $jqimgFill_tc = $('.jqimgFill-tc');
-            $pro64 = $('.pro64');
-            $pro64s = $('.pro64s');
-            $pro11 = $('.pro11');
-            $pro1 = $('.pro1');
-            $body = $('body');
-            $header = $('#header');
-            $navbarToggle = $('.navbar-toggle');
-            $banner = $('#banner');
-            $homeNews = $('#homeNews');
-            $homePro = $('#homePro');
-            $proBoxList = $('#proBoxList');
-            $body.addClass('in');
-
-            $searchBox = $('.search-bar');
-            $searchBoxBtn = $('#searhc-box-btn');
-
-            $itemMenu = $('.item-menu');
-            $menu = $('#header .menu');
-
-            $comparisonBox = $('.comparisonBox');
-            $comparisonBoxBtn = $('.comparison');
-
-            resizeCss();
-            new WOW().init();
-
-            /*== navigation  =========================== */
-            $navbarToggle.click(function () {
-                $body.toggleClass('open');
-            });
-
+            
             /*== top  =========================== */
             $(".top").click(function () {
                 jQuery("html,body").animate({
