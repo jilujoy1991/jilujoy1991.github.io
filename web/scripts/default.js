@@ -50,10 +50,19 @@
                     $('.top').stop().fadeOut("fast");
                 }
             });
-						
-						/* ==========================================================================
-							* 產品內頁 往下
-						==========================================================================*/
+            $(window).bind('scroll', function () {
+                var $this = $(this);
+                var $this_Top = $this.scrollTop();
+                if ($this_Top < 75) {
+                    $header.removeClass("fixed");
+                    //$banner.addClass("mPS2id-target");
+                }
+                if ($this_Top > 75) {
+                    $header.addClass("fixed");
+                    //$banner.removeClass("mPS2id-target");
+                }
+            }).scroll();
+
 						
         }
         
