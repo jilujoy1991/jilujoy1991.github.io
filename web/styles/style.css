@@ -933,11 +933,11 @@ ul.rows {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 4s;
   -moz-animation-name: fade;
-  -moz-animation-duration: 3s;
+  -moz-animation-duration: 4s;
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
@@ -1043,3 +1043,17 @@ footer .navList ul {
       .row.content {height:auto;}
     }
   
+
+
+
+.icon-globe-inv::before {
+    content: '\e804';
+}
+
+#header .menu > ul > li > a {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .5;
+    padding: 20px 18px;
+    transition: color .4s ease , transform .4s ease;
+}
